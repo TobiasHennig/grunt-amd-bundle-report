@@ -34,5 +34,8 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "dependencies": {
+    "amd-bundle-report": "github:TobiasHennig/amd-bundle-report"
+  }
 }
