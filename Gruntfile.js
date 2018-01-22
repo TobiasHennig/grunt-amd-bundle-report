@@ -30,22 +30,16 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     amd_bundle_report: {
-      default_options: {
+      default: {
         options: {
+          limit: 90,
         },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
+        files: [
+          'test/fixtures/bundle.js',
+          'test/fixtures/anotherBundle.js',
+          'test/fixtures/yetAnotherBundle.js',
+        ]
       },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
-      }
     },
 
     // Unit tests.
@@ -65,7 +59,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'amd_bundle_report', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);

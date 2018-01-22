@@ -1,1 +1,7 @@
-Testing, 1 2 3.
+anotherBundle.js (65 B|46 B) [1 Dep]
+bundle.js (99 B|150 B) [3 Dep]
+WARNING: bundle.js exceeds the recommended limit (90 B)
+yetAnotherBundle.js (82 B|94 B) [2 Dep]
+
+WARNING: Redundant dependencies found
+a [bundle.js, yetAnotherBundle.js]
