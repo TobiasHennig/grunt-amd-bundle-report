@@ -1,31 +1,19 @@
 {
   "name": "grunt-amd-bundle-report",
-  "description": "The best Grunt plugin ever.",
-  "version": "1.0.0",
-  "homepage": "https://github.com/henni11/grunt-amd-bundle-report",
+  "version": "0.0.1",
+  "description": "",
+  "main": "tasks/amd_bundle_report.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
   "author": {
     "name": "Tobias Hennig",
     "email": "tobias.hennig1@gmail.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/henni11/grunt-amd-bundle-report.git"
-  },
-  "bugs": {
-    "url": "https://github.com/henni11/grunt-amd-bundle-report/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/henni11/grunt-amd-bundle-report/blob/master/LICENSE-MIT"
-    }
-  ],
-  "engines": {
-    "node": ">= 7.6.0"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
+  "license": "ISC",
   "devDependencies": {
     "grunt": "~1.0.1",
     "grunt-contrib-clean": "^1.1.0",
@@ -33,10 +21,7 @@
     "grunt-contrib-nodeunit": "^1.0.0",
     "strip-ansi": "^4.0.0"
   },
-  "keywords": [
-    "gruntplugin"
-  ],
   "dependencies": {
-    "amd-bundle-report": "github:TobiasHennig/amd-bundle-report"
+    "amd-bundle-report": "0.0.1"
   }
 }
